@@ -7,9 +7,6 @@ function makeAnagram(a, b) {
 
     for (let i = 0; i < aArray.length; i++) {
         for (let j = 0; j < bArray.length; j++) {
-            if (bArray.length === 0) {
-                return;
-            }
             if (aArray[i] === bArray[j]) {
                 bArray.splice(j, 1);
                 anagramLetters += 2;
